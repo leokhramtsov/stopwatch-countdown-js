@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app" class="App">
+      <h1 className="heading">Playing with time...[usingJavascriptOnly]</h1>
+      <div>
+        <h2 class="component__title">Countdown</h2>
+        <div class="countdown display">00 : 00 : 00</div>
+
+        <div class="controls">
+          <button class="countdown btn__start">
+            Start
+          </button>
+          <button class="countdown btn__stop">
+            Pause
+          </button>
+          <button class="countdown btn__reset">
+            Reset
+          </button>
+        </div>
+        <div class="time-adjuster">
+          <div class="countdown__info">
+            Set your timer using the inputs below.
+          </div>
+          <div class="time-adjuster__grid">
+            <div class="input-group minutes">
+              <label for="m">Minutes</label>
+              <input type="number" name="m" id="m" value="0" min="0" max="59" />
+            </div>
+            <div class="input-group seconds">
+              <label for="s">Seconds</label>
+              <input type="number" name="s" id="s" value="0" min="0" max="59" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div>
+        <h2 class="component__title">Stopwatch</h2>
+        <div class="stopwatch display">00 : 00 : 00</div>
+        <div class="controls">
+          <button class="stopwatch btn__start">
+            Start
+          </button>
+          <button class="stopwatch btn__stop">
+            Pause
+          </button>
+          <button class="stopwatch btn__reset">
+            Reset
+          </button>
+          <button class="stopwatch btn__lap">
+            Lap
+          </button>
+        </div>
+        <div class="results">
+          <ul class="laps"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
